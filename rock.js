@@ -35,8 +35,9 @@ function color(color){
       }
    }
 
-   // let result = ''
+  
    function play(pick){ 
+      let result = ''
       randomNum()
       if(pick === "rock"){
          if(compMove === "rock"){
@@ -64,6 +65,8 @@ function color(color){
            }else if(compMove === "snake"){
             result = "it's a tie"
            }
+
+         //score section
       }
       if(result === "player wins"){
          score.player++
@@ -75,15 +78,13 @@ function color(color){
          score.tie++
       }
 
+      //reset score
       if(pick === "reset"){
          result = "Game Reset"
          score.player = 0
          score.computer = 0
          score.tie = 0
-         console.log(pick)
       }
-
-      console.log(result)
       viewEl.innerHTML = result
       playerEl.innerHTML = score.player
       computerEl.innerHTML = score.computer
