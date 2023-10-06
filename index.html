@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, peper, snake Game</title>
+  <link rel="stylesheet" href="rock.css">
+</head>
+<body>
+  <header>
+    <span>Player: <b id="player">0</b></span>
+    <span>Cumputer: <b id="computer">0</b></span>
+    <span>Tie: <b id="tie">0</b></span>
+    <span>Total Game: <b id="totalGame">0</b></span>
+  </header>
+  <main>
+    <span id="view">View</span>
+    <div>
+      <span onclick="play('rock')">rock</span>
+      <span onclick="play('paper')">paper</span>
+      <span onclick="play('snake')">snake</span>
+    </div>
+    <button onclick="play('reset')">Reset Game</button>
+  </main>
+  <button class="color" onclick="color('white')">white background</button>
+  <button class="color black" onclick="color('black')">black background</button>
+  
+  <script src="rock.js"></script>
+</body>
+</html>
